@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./build/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+           'jaldi': ['Jaldi'],
+        },
+    },
   },
   plugins: [],
 }
