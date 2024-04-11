@@ -836,12 +836,12 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\/build\/img\/headbg\.jpg\'\)\] {
-  background-image: url('/build/img/headbg.jpg');
-}
-
 .bg-cover {
   background-size: cover;
+}
+
+.bg-contain {
+  background-size: contain;
 }
 
 .bg-no-repeat {
