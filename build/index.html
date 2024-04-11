@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8" />
@@ -12,80 +12,70 @@
 </head>
 
 <body class="font-jaldi">
-  <header class="w-full bg-cover min-h-screen " style="background-image: url('./img/headbg.jpg');">
+  <header class="w-full bg-cover min-h-screen" style="background-image: url('./img/headbg.jpg')">
     <div class="w-full md:h-screen h-fit md:px-5 px-0">
       <div class="heading flex items-center justify-between gap-4 sm:gap-8 w-4/6 md:mx-auto pt-4 mx-auto">
-        
         <img src="./img/logo1.png" alt="logo" />
 
         <nav>
-          <button id="hamberger-button" class="min-[936px]:hidden  cursor-pointer text-black text-3xl">&#9776;</button>
-         
-          <div class="hidden w-fit min-[936px]:block" id="navbar-default">
+          <button id="hamberger-button" class="min-[936px]:hidden cursor-pointer text-black text-3xl">
+            &#9776;
+          </button>
 
+          <div class="hidden w-fit min-[936px]:block" id="navbar-default">
             <ul
               class="text-base flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0">
               <li>
                 <a href="#" class="block py-2 px-3 rounded md:bg-transparent md:p-0" aria-current="page">HOME</a>
               </li>
               <li>
-                <a href="#about" class="block py-2 px-3 rounded md:bg-transparent md:p-0" aria-current="page">ABOUT
-                  KETAMINE</a>
+                <a href="#aboutKetamine" class="block py-2 px-3 rounded md:bg-transparent md:p-0"
+                  aria-current="page">ABOUT KETAMINE</a>
               </li>
               <li>
-                <a href="#services" class="block py-2 px-3 rounded md:bg-transparent md:p-0" aria-current="page">ABOUT
+                <a href="#about-us" class="block py-2 px-3 rounded md:bg-transparent md:p-0" aria-current="page">ABOUT
                   US</a>
               </li>
 
               <li>
-                <a href="#resume" class="block py-2 px-3 rounded md:bg-transparent md:p-0" aria-current="page">PATENT
+                <a href="#patent" class="block py-2 px-3 rounded md:bg-transparent md:p-0" aria-current="page">PATENT
                   FORMS</a>
               </li>
               <li>
-                <a href="#projects" class="block py-2 px-3 rounded md:bg-transparent md:p-0" aria-current="page">CONTACT
+                <a href="#contact" class="block py-2 px-3 rounded md:bg-transparent md:p-0" aria-current="page">CONTACT
                   US</a>
               </li>
             </ul>
-          </div>  
+          </div>
         </nav>
- <section id="mobile-menu"
-            class="absolute    h-fit top-20   w-1/2 text-sm flex flex-col text-white   animate-open-menu min-[936px]:hidden hidden" style="background-color: rgb(0, 58, 142, 0.6)">
-            <!-- <button class="text-2xl self-end px-6">&times;</button> -->
-            <nav class="flex flex-col  items-center pb-8 " aria-label="mobile">
-              <ul
-                class="font-semibold  flex flex-col p-4 md:p-4  gap-4 min-[936px]:flex-row lg:space-x-8  md:mt-0 md:border-0 ">
-                <li>
-                  <a href="#" class="block py-2 px-3  rounded md:bg-transparent  " aria-current="page">HOME</a>
-                </li>
-                <li>
-                  <a href="#about" class="block py-2 px-3  rounded md:bg-transparent  " aria-current="page">ABOUT
-                    KETAMINE</a>
-                </li>
-                <li>
-                  <a href="#services" class="block py-2 px-3  rounded md:bg-transparent  " aria-current="page">ABOUT
-                    US</a>
-                </li>
+        <section id="mobile-menu"
+          class="absolute h-fit top-20 w-1/2 text-sm flex flex-col text-white animate-open-menu min-[936px]:hidden hidden"
+          style="background-color: rgb(0, 58, 142, 0.6)">
+          <!-- <button class="text-2xl self-end px-6">&times;</button> -->
+          <nav class="flex flex-col items-center pb-8" aria-label="mobile">
+            <ul
+              class="font-semibold flex flex-col p-4 md:p-4 gap-4 min-[936px]:flex-row lg:space-x-8 md:mt-0 md:border-0">
+              <li>
+                <a href="#" class="block py-2 px-3 rounded md:bg-transparent" aria-current="page">HOME</a>
+              </li>
+              <li>
+                <a href="#aboutKetamine" class="block py-2 px-3 rounded md:bg-transparent" aria-current="page">ABOUT
+                  KETAMINE</a>
+              </li>
+              <li>
+                <a href="#about-us" class="block py-2 px-3 rounded md:bg-transparent" aria-current="page">ABOUT US</a>
+              </li>
 
-                <li>
-                  <a href="#resume" class="block py-2 px-3  rounded md:bg-transparent  " aria-current="page">PATENT
-                    FORMS</a>
-                </li>
-                <li>
-                  <a href="#projects" class="block py-2 px-3  rounded md:bg-transparent  " aria-current="page">CONTACT
-                    US</a>
-                </li>
-
-
-
-
-              </ul>
-
-
-            </nav>
-
-          </section>
+              <li>
+                <a href="#patent" class="block py-2 px-3 rounded md:bg-transparent" aria-current="page">PATENT FORMS</a>
+              </li>
+              <li>
+                <a href="#contact" class="block py-2 px-3 rounded md:bg-transparent" aria-current="page">CONTACT US</a>
+              </li>
+            </ul>
+          </nav>
+        </section>
       </div>
-
 
       <div class="w-full md:w-[75%] mx-auto p-5 pt-7 mt-36 md:my-36" style="background-color: rgb(0, 58, 142, 0.6)">
         <div class="margin-auto text-center header-content">
@@ -104,19 +94,7 @@
     </div>
   </header>
 
-
-
-
-
-
-
-
-
-
-
-
-
-  <section class="min-h-fit bg-gray-100 shadow-2xl md:w-11/12 mx-auto md:mt-[5%]">
+  <section class="min-h-fit bg-gray-100 shadow-2xl md:w-11/12 mx-auto md:mt-[5%] " id="aboutKetamine">
     <div class="flex lg:flex-row flex-col-reverse items-center">
       <div class="lg:w-[80%] w-full mx-auto p-3 md:p-8 bg-blue-100 shadow-xl z-10 relative bottom-20">
         <div class="clinic-info text-center">
@@ -162,15 +140,15 @@
       </div>
     </div>
   </section>
-  <div class="comment-container mt-5 mb-5 w-full md:w-[75%]  mx-auto  shadow-xl">
-    <div class="w-full h-full grid grid-cols-12 ">
-      <div class="col-span-12 md:col-span-4 mx-auto ">
+  <div class="comment-container mt-5 mb-5 w-full md:w-[75%] mx-auto shadow-xl">
+    <div class="w-full h-full grid grid-cols-12">
+      <div class="col-span-12 md:col-span-4 mx-auto">
         <img src="./img/greenrose.png" alt="rose" class="h-full" />
       </div>
 
-      <div class="col-span-12 md:col-span-8  flex flex-col">
-        <div class="grid grid-cols-12 md:h-1/2 ">
-          <div class="col-span-12 md:col-span-6 bg-[#00317a]  text-white p-10 flex justify-center items-center">
+      <div class="col-span-12 md:col-span-8 flex flex-col">
+        <div class="grid grid-cols-12 md:h-1/2">
+          <div class="col-span-12 md:col-span-6 bg-[#00317a] text-white p-10 flex justify-center items-center">
             <p>
               Ketamine Infusion can lead to rapid reduction in depressive
               symptoms within hours unlike traditional treatments, which can
@@ -184,119 +162,128 @@
             </p>
             <h5 class="text-xl mt-2 italic">Henderson TA, 2016</h5>
           </div>
-
-
         </div>
         <div class="grid col-span-12 shadow-xl">
           <div class="col-span-12 flex justify-center flex-col items-center p-5 pb-0">
             <p>
-              <span class="quote1" style="color: #81bcba;
-    font-size: 3.5em;">&ldquo;</span> It is a long established
-              fact that a reader will be distracted by the readable content
-              of a page when looking at its layout. The point of using Lorem
-              Ipsum is that it has a more-or-less.<br />
-              <span class="text-center " style="color: #81bcba;
-    font-size: 3.5em;">&rdquo;</span>
-
+              <span class="quote1" style="color: #81bcba; font-size: 3.5em">&ldquo;</span>
+              It is a long established fact that a reader will be distracted
+              by the readable content of a page when looking at its layout.
+              The point of using Lorem Ipsum is that it has a more-or-less.<br />
+              <span class="text-center" style="color: #81bcba; font-size: 3.5em">&rdquo;</span>
             </p>
             <strong class="text-[18px] text-center w-full block">30 year old female</strong>
-
           </div>
         </div>
       </div>
     </div>
   </div>
 
-
-  <section class="contact w-full min-h-screen bg-no-repeat bg-cover flex justify-center items-center"
-    style="background-image: url('./img/contactbg.jpg');">
-    <div class="sm:w-3/4 h-fit lg:h-[73vh] mx-auto grid grid-cols-12  sm:px-7 py-2 "
+  <section id="patent" class="contact w-full min-h-screen bg-no-repeat bg-cover flex justify-center items-center"
+    style="background-image: url('./img/contactbg.jpg')">
+    <div class="sm:w-3/4 h-fit lg:h-[73vh] mx-auto grid grid-cols-12 sm:px-7 py-2"
       style="background-color: rgb(0, 58, 142, 0.6)">
-      <div class="contact-left col-span-12 lg:col-span-6 p-7 lg:pr-0  text-white lg:w-[115%]">
+      <div class="contact-left col-span-12 lg:col-span-6 p-7 lg:pr-0 text-white lg:w-[115%]">
         <h3 class="text-xl">Is ketamine Safe?</h3>
-        <p>Ketamine infusion for depression has, thus far, been found to be
+        <p>
+          Ketamine infusion for depression has, thus far, been found to be
           extremely safe and without significant side effects. It is used at
-          doses lower than what are used for anesthesia. <span class="contact-arrow fw-semibold ">></span>
+          doses lower than what are used for anesthesia.
+          <span class="contact-arrow fw-semibold">></span>
         </p>
-        <p class="h-1 w-1/4 bg-teal-600  my-4"></p>
+        <p class="h-1 w-1/4 bg-teal-600 my-4"></p>
         <h3 class="text-xl">Is ketamine for me?</h3>
-        <p>You may be a candidate for ketamine infusion if you suffer from
-          depression, certain anxiety disorders, Posttraumatic Stress
-          Disorder (PTSD), or fibromyalgia that has not responded to other
-          treatments. <span class="contact-arrow fw-semibold text-teal-300">></span></p>
-        <p class="h-1 w-1/4 bg-teal-600  my-4"></p>
+        <p>
+          You may be a candidate for ketamine infusion if you suffer from
+          depression, certain anxiety disorders, Posttraumatic Stress Disorder
+          (PTSD), or fibromyalgia that has not responded to other treatments.
+          <span class="contact-arrow fw-semibold text-teal-300">></span>
+        </p>
+        <p class="h-1 w-1/4 bg-teal-600 my-4"></p>
         <h3 class="text-xl">How does the whole process work?</h3>
-        <p>We have created an easy yet thorough process to ensure that you
-          are a good fit for ketamine infusion. Please visit <a href="" class="link">this page</a> for the
-          overview of the process. <span class="contact-arrow fw-semibold">></span></p>
-
+        <p>
+          We have created an easy yet thorough process to ensure that you are
+          a good fit for ketamine infusion. Please visit
+          <a href="" class="link">this page</a> for the overview of the
+          process. <span class="contact-arrow fw-semibold">></span>
+        </p>
       </div>
       <div class="contact-right col-span-12 lg:col-span-6 lg:w-[80%] lg:ml-auto">
-        <form class=" px-8 pb-2 shadow-2xl bg-white">
-          <h4 style="color: #00317a;" class="text-center font-bold p-2">CONTACT US
-            NOW</h4><br>
-          <input type="text" placeholder="Name" style="width: 100%;"><br><br>
-          <input type="text" placeholder="Phone" style="width: 100%" ;><br><br>
-          <p class="mb-0 text-justify">Is it okay for our staff to call you and leave a voicemail with information
-            pertaining to
-            your
-            condition and our treatment?</p><br>
-          <div class="text-start"> <input type="radio" name="" id=""> Yes
-            <input type="radio"> No<br><br>
+        <form class="px-8 pb-2 shadow-2xl bg-white">
+          <h4 style="color: #00317a" class="text-center font-bold p-2">
+            CONTACT US NOW
+          </h4>
+          <br />
+          <input type="text" placeholder="Name" style="width: 100%" /><br /><br />
+          <input type="text" placeholder="Phone" style="width: 100%" ; /><br /><br />
+          <p class="mb-0 text-justify">
+            Is it okay for our staff to call you and leave a voicemail with
+            information pertaining to your condition and our treatment?
+          </p>
+          <br />
+          <div class="text-start">
+            <input type="radio" name="" id="" /> Yes
+            <input type="radio" /> No<br /><br />
           </div>
-          <input type="email" placeholder="Email" style="width: 100%" ;><br><br>
-          <p class="mb-0 text-justify">Is it okay for our staff to email you with information pertaining to your
-            condition and our
-            treatment?</p><br>
-          <div class="text-start"> <input type="radio" name="" id=""> Yes
-            <input type="radio"> No<br><br>
+          <input type="email" placeholder="Email" style="width: 100%" ; /><br /><br />
+          <p class="mb-0 text-justify">
+            Is it okay for our staff to email you with information pertaining
+            to your condition and our treatment?
+          </p>
+          <br />
+          <div class="text-start">
+            <input type="radio" name="" id="" /> Yes
+            <input type="radio" /> No<br /><br />
           </div>
-          <textarea placeholder="Message" style="height:100px;width: 100%"></textarea><br><br>
+          <textarea placeholder="Message" style="height: 100px; width: 100%"></textarea><br /><br />
 
-          <div type="button" class="text-white p-2  bg-teal-200 text-center w-1/2 mx-auto">
+          <div type="button" class="text-white p-2 bg-teal-200 text-center w-1/2 mx-auto">
             SUBMIT
           </div>
         </form>
       </div>
     </div>
-
-
   </section>
 
-  <section class="about-us w-full min-h-screen  flex justify-center items-center ">
+  <section class="about-us w-full min-h-screen flex justify-center items-center" id="about-us">
     <div class="bg-white h-fit md:w-3/4 mx-auto md:py-16 md:px-20 p-5 shadow-2xl">
       <h1 class="text-3xl text-blue-400 mt-4">WHO WE ARE:</h1>
-      <p class="h-1 w-1/4 bg-teal-600  my-8"></p>
-      <p class="text-base text-justify md:w-[80%]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-        similique quibusdam consequatur
-        tempora ut unde laudantium aut doloribus. Veritatis quas nihil minima officiis consectetur cum
-        cumque, sint hic, unde dicta repellat fugiat totam maxime consequatur repellendus rerum ea explicabo
-        veniam dolore tempore eius nemo a voluptatem velit. Aspernatur, voluptates molestias quae cum
-        inventore perspiciatis, dolorem ipsum architecto doloribus nam id quo optio? Nihil magni ducimus,
-        nobis id assumenda nisi perferendis modi officia asperiores nemo aspernatur repudiandae facilis in
-        exercitationem iste?
+      <p class="h-1 w-1/4 bg-teal-600 my-8"></p>
+      <p class="text-base text-justify md:w-[80%]">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+        similique quibusdam consequatur tempora ut unde laudantium aut
+        doloribus. Veritatis quas nihil minima officiis consectetur cum
+        cumque, sint hic, unde dicta repellat fugiat totam maxime consequatur
+        repellendus rerum ea explicabo veniam dolore tempore eius nemo a
+        voluptatem velit. Aspernatur, voluptates molestias quae cum inventore
+        perspiciatis, dolorem ipsum architecto doloribus nam id quo optio?
+        Nihil magni ducimus, nobis id assumenda nisi perferendis modi officia
+        asperiores nemo aspernatur repudiandae facilis in exercitationem iste?
       </p>
 
-      <div class="flex flex-col justify-center  md:flex-row mt-7 md:w-[90%] md:justify-between">
-        <div class="flex  items-center flex-col">
-          <img src="./img/david.png" alt="" height="150px" width="150px">
-          <p class="text-base text-blue-700 font-semibold">DAVID DANISH ,MD</p>
+      <div class="flex flex-col justify-center md:flex-row mt-7 md:w-[90%] md:justify-between">
+        <div class="flex items-center flex-col">
+          <img src="./img/david.png" alt="" height="150px" width="150px" />
+          <p class="text-base text-blue-700 font-semibold">
+            DAVID DANISH ,MD
+          </p>
         </div>
         <div class="flex justify-center items-center flex-col">
-          <img src="./img/david.png" alt="" height="150px" width="150px">
-          <p class="text-base text-blue-700 font-semibold">SHIVRAJ SHETTY ,MD</p>
+          <img src="./img/david.png" alt="" height="150px" width="150px" />
+          <p class="text-base text-blue-700 font-semibold">
+            SHIVRAJ SHETTY ,MD
+          </p>
         </div>
         <div class="flex justify-center items-center flex-col">
-          <img src="./img/david.png" alt="" height="150px" width="150px">
+          <img src="./img/david.png" alt="" height="150px" width="150px" />
           <p class="text-base text-blue-700 font-semibold">AKHIL ,MD</p>
         </div>
       </div>
-
     </div>
   </section>
 
-  <footer class="w-full text-white bg-blue-900">
-    <div class="w-[75%] min-h-fit   grid grid-cols-12  mx-auto p-10 ">
+  <footer class="w-full text-white bg-blue-900" id="contact">
+    <div class="w-[75%] min-h-fit grid grid-cols-12 mx-auto p-10">
       <div class="col-span-12 md:col-span-4 flex justify-center items-center gap-2 flex-col mb-5">
         <h4 class="text-lg text-center">NAVIGATION</h4>
         <ul class="text-center md:text-start mt-5 list-none">
@@ -308,10 +295,9 @@
         </ul>
       </div>
 
-      <div class="col-span-12 md:col-span-4 flex   h-full flex-col gap-2 mb-5">
-
-        <h4 class="text-lg text-center ">CONTACTS</h4>
-        <ul class=" text-center  mt-5 list-none">
+      <div class="col-span-12 md:col-span-4 flex h-full flex-col gap-2 mb-5">
+        <h4 class="text-lg text-center">CONTACTS</h4>
+        <ul class="text-center mt-5 list-none">
           <li class="my-3">
             <p><i class="fa fa-phone"></i><a href="">&nbsp;123-456-789</a></p>
           </li>
@@ -319,21 +305,24 @@
             <p><i class="fa fa-envelope"></i>&nbsp;info@ksolp.com</p>
           </li>
           <li class="my-3">
-            <p><i class="fa fa-map-marker"></i>&nbsp; 111 Forest Ave Second floor<br>Narberth, PA 19072</p>
+            <p>
+              <i class="fa fa-map-marker"></i>&nbsp; 111 Forest Ave Second
+              floor<br />Narberth, PA 19072
+            </p>
           </li>
         </ul>
       </div>
-      <div class="col-span-12 md:col-span-4 flex justify-center  flex-col">
-        <div class="social-icons flex  justify-around items-center ">
+      <div class="col-span-12 md:col-span-4 flex justify-center flex-col">
+        <div class="social-icons flex justify-around items-center">
           <a href="#"><i class="fa-brands fa-facebook fa-xl"></i></a>
           <a href="#"><i class="fa-brands fa-youtube fa-xl"></i></a>
           <a href="#"><i class="fa-brands fa-instagram fa-xl"></i></a>
         </div>
-        <img src="./img/logo1.png" alt="" class="my-5">
+        <img src="./img/logo1.png" alt="" class="my-5" />
         <p class="text-center">2024 copyright &copy;KetamineClinic</p>
       </div>
     </div>
-    <div class="w-full min-h-[15vh]" style="background:url('./img/leaf.jpg');"></div>
+    <div class="w-full min-h-[15vh]" style="background: url('./img/leaf.jpg')"></div>
   </footer>
 
   <script src="./js/main.js"></script>
