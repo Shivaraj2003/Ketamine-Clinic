@@ -14,10 +14,15 @@
 <body class="font-serif">
   <header class="w-full bg-cover min-h-screen bg-[url('/build/img/headbg.jpg')]">
     <div class="w-full md:h-screen h-fit md:px-5 px-0">
-      <div class="heading flex items-center justify-between gap-8 w-4/6 mx-auto pt-4">
+      <div class="heading flex items-center justify-between gap-4 sm:gap-8 w-4/6 md:mx-auto pt-4">
+        
         <img src="/build/img/logo1.png" alt="logo" />
+
         <nav>
+          <button id="hamberger-button" class="min-[936px]:hidden  cursor-pointer text-black text-3xl">&#9776;</button>
+         
           <div class="hidden w-fit min-[936px]:block" id="navbar-default">
+
             <ul
               class="text-base flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0">
               <li>
@@ -41,9 +46,46 @@
                   US</a>
               </li>
             </ul>
-          </div>
+          </div>  
         </nav>
+ <section id="mobile-menu"
+            class="absolute    h-fit top-20   w-1/2 text-sm flex flex-col text-white   animate-open-menu min-[936px]:hidden w-[100vw]" style="background-color: rgb(0, 58, 142, 0.6)">
+            <!-- <button class="text-2xl self-end px-6">&times;</button> -->
+            <nav class="flex flex-col  items-center pb-8 " aria-label="mobile">
+              <ul
+                class="font-semibold  flex flex-col p-4 md:p-4  gap-4 min-[936px]:flex-row lg:space-x-8  md:mt-0 md:border-0 md:bg-white">
+                <li>
+                  <a href="#" class="block py-2 px-3  rounded md:bg-transparent  " aria-current="page">HOME</a>
+                </li>
+                <li>
+                  <a href="#about" class="block py-2 px-3  rounded md:bg-transparent  " aria-current="page">ABOUT
+                    KETAMINE</a>
+                </li>
+                <li>
+                  <a href="#services" class="block py-2 px-3  rounded md:bg-transparent  " aria-current="page">ABOUT
+                    US</a>
+                </li>
+
+                <li>
+                  <a href="#resume" class="block py-2 px-3  rounded md:bg-transparent  " aria-current="page">PATENT
+                    FORMS</a>
+                </li>
+                <li>
+                  <a href="#projects" class="block py-2 px-3  rounded md:bg-transparent  " aria-current="page">CONTACT
+                    US</a>
+                </li>
+
+
+
+
+              </ul>
+
+
+            </nav>
+
+          </section>
       </div>
+
 
       <div class="w-full md:w-[75%] mx-auto p-5 pt-7 mt-36 md:my-36" style="background-color: rgb(0, 58, 142, 0.6)">
         <div class="margin-auto text-center header-content">
@@ -61,6 +103,18 @@
       </div>
     </div>
   </header>
+
+
+
+
+
+
+
+
+
+
+
+
 
   <section class="min-h-fit bg-gray-100 shadow-2xl md:w-11/12 mx-auto md:mt-[5%]">
     <div class="flex lg:flex-row flex-col-reverse items-center">
@@ -156,7 +210,8 @@
 
   <section class="contact w-full min-h-screen bg-no-repeat bg-cover flex justify-center items-center"
     style="background-image: url('/build/img/contactbg.jpg');">
-    <div class="sm:w-3/4 h-fit lg:h-[73vh] mx-auto grid grid-cols-12  sm:px-7 py-2 " style="background-color: rgb(0, 58, 142, 0.6)">
+    <div class="sm:w-3/4 h-fit lg:h-[73vh] mx-auto grid grid-cols-12  sm:px-7 py-2 "
+      style="background-color: rgb(0, 58, 142, 0.6)">
       <div class="contact-left col-span-12 lg:col-span-6 p-7 lg:pr-0  text-white lg:w-[115%]">
         <h3 class="text-xl">Is ketamine Safe?</h3>
         <p>Ketamine infusion for depression has, thus far, been found to be
@@ -176,62 +231,66 @@
           overview of the process. <span class="contact-arrow fw-semibold">></span></p>
 
       </div>
-<div class="contact-right col-span-12 lg:col-span-6 lg:w-[80%] lg:ml-auto">
-      <form class=" px-8 pb-2 shadow-2xl bg-white" >
-                    <h4 style="color: #00317a;" class="text-center font-bold p-2">CONTACT US
-                        NOW</h4><br>
-                    <input type="text" placeholder="Name" style="width: 100%;"><br><br>
-                    <input type="text" placeholder="Phone" style="width: 100%" ;><br><br>
-                    <p class="mb-0 text-justify" >Is it okay for our staff to call you and leave a voicemail with information pertaining to
-                    your
-                    condition and our treatment?</p><br>
-                   <div  class="text-start"> <input type="radio" name="" id=""> Yes
-                    <input type="radio"> No<br><br></div>
-                    <input type="email" placeholder="Email" style="width: 100%" ;><br><br>
-                    <p class="mb-0 text-justify">Is it okay for our staff to email you with information pertaining to your condition and our
-                    treatment?</p><br>
-                    <div class="text-start"> <input type="radio" name="" id=""> Yes
-                    <input type="radio"> No<br><br></div>
-                    <textarea placeholder="Message" style="height:100px;width: 100%"></textarea><br><br>
+      <div class="contact-right col-span-12 lg:col-span-6 lg:w-[80%] lg:ml-auto">
+        <form class=" px-8 pb-2 shadow-2xl bg-white">
+          <h4 style="color: #00317a;" class="text-center font-bold p-2">CONTACT US
+            NOW</h4><br>
+          <input type="text" placeholder="Name" style="width: 100%;"><br><br>
+          <input type="text" placeholder="Phone" style="width: 100%" ;><br><br>
+          <p class="mb-0 text-justify">Is it okay for our staff to call you and leave a voicemail with information
+            pertaining to
+            your
+            condition and our treatment?</p><br>
+          <div class="text-start"> <input type="radio" name="" id=""> Yes
+            <input type="radio"> No<br><br>
+          </div>
+          <input type="email" placeholder="Email" style="width: 100%" ;><br><br>
+          <p class="mb-0 text-justify">Is it okay for our staff to email you with information pertaining to your
+            condition and our
+            treatment?</p><br>
+          <div class="text-start"> <input type="radio" name="" id=""> Yes
+            <input type="radio"> No<br><br>
+          </div>
+          <textarea placeholder="Message" style="height:100px;width: 100%"></textarea><br><br>
 
-                    <div type="button" class="text-white p-2  bg-teal-200 text-center w-1/2 mx-auto"
-                       >
-                        SUBMIT
-                    </div>
-                </form>
+          <div type="button" class="text-white p-2  bg-teal-200 text-center w-1/2 mx-auto">
+            SUBMIT
+          </div>
+        </form>
+      </div>
     </div>
-    </div>
-    
+
 
   </section>
 
   <section class="about-us w-full min-h-screen  flex justify-center items-center ">
     <div class="bg-white h-fit md:w-3/4 mx-auto md:py-16 md:px-20 p-5 shadow-2xl">
-<h1 class="text-3xl text-blue-400 mt-4">WHO WE ARE:</h1>
-<p class="h-1 w-1/4 bg-teal-600  my-8"></p>
-<p class="text-base text-justify md:w-[80%]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque similique quibusdam consequatur
-                    tempora ut unde laudantium aut doloribus. Veritatis quas nihil minima officiis consectetur cum
-                    cumque, sint hic, unde dicta repellat fugiat totam maxime consequatur repellendus rerum ea explicabo
-                    veniam dolore tempore eius nemo a voluptatem velit. Aspernatur, voluptates molestias quae cum
-                    inventore perspiciatis, dolorem ipsum architecto doloribus nam id quo optio? Nihil magni ducimus,
-                    nobis id assumenda nisi perferendis modi officia asperiores nemo aspernatur repudiandae facilis in
-                    exercitationem iste?
-    </p>
+      <h1 class="text-3xl text-blue-400 mt-4">WHO WE ARE:</h1>
+      <p class="h-1 w-1/4 bg-teal-600  my-8"></p>
+      <p class="text-base text-justify md:w-[80%]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+        similique quibusdam consequatur
+        tempora ut unde laudantium aut doloribus. Veritatis quas nihil minima officiis consectetur cum
+        cumque, sint hic, unde dicta repellat fugiat totam maxime consequatur repellendus rerum ea explicabo
+        veniam dolore tempore eius nemo a voluptatem velit. Aspernatur, voluptates molestias quae cum
+        inventore perspiciatis, dolorem ipsum architecto doloribus nam id quo optio? Nihil magni ducimus,
+        nobis id assumenda nisi perferendis modi officia asperiores nemo aspernatur repudiandae facilis in
+        exercitationem iste?
+      </p>
 
-    <div class="flex flex-wrap justify-center  md:flex-row mt-7 md:w-[90%] md:justify-between">
-      <div class="flex  items-center flex-col">
-                    <img src="/build/img/david.png" alt="" height="150px" width="150px">
-                    <p class="text-base text-blue-700 font-semibold">DAVID DANISH ,MD</p>
-                </div>
-                <div class="flex justify-center items-center flex-col">
-                    <img src="/build/img/david.png" alt="" height="150px" width="150px">
-                    <p class="text-base text-blue-700 font-semibold" >SHIVRAJ SHETTY ,MD</p>
-                </div>
-                <div class="flex justify-center items-center flex-col">
-                    <img src="/build/img/david.png" alt="" height="150px" width="150px">
-                    <p class="text-base text-blue-700 font-semibold" >AKHIL ,MD</p>
-                </div>
-    </div>
+      <div class="flex flex-wrap justify-center  md:flex-row mt-7 md:w-[90%] md:justify-between">
+        <div class="flex  items-center flex-col">
+          <img src="/build/img/david.png" alt="" height="150px" width="150px">
+          <p class="text-base text-blue-700 font-semibold">DAVID DANISH ,MD</p>
+        </div>
+        <div class="flex justify-center items-center flex-col">
+          <img src="/build/img/david.png" alt="" height="150px" width="150px">
+          <p class="text-base text-blue-700 font-semibold">SHIVRAJ SHETTY ,MD</p>
+        </div>
+        <div class="flex justify-center items-center flex-col">
+          <img src="/build/img/david.png" alt="" height="150px" width="150px">
+          <p class="text-base text-blue-700 font-semibold">AKHIL ,MD</p>
+        </div>
+      </div>
 
     </div>
   </section>
@@ -240,34 +299,41 @@
     <div class="w-[75%] min-h-fit   grid grid-cols-12  mx-auto p-10 ">
       <div class="col-span-12 md:col-span-4 flex justify-center items-center gap-2 flex-col mb-5">
         <h4 class="text-lg text-center">NAVIGATION</h4>
-        <ul class="text-center md:text-start mt-5 list-none" >
-                        <li class="my-2"><a href="#" >Home</a></li>
-                        <li class="my-2"><a href="#">About Ketamine</a></li>
-                        <li class="my-2"><a href="#">About Us</a></li>
-                        <li class="my-2"><a href="#">Patent Forms</a></li>
-                        <li class="my-2"><a href="#">Contact us</a></li>
-                    </ul>
+        <ul class="text-center md:text-start mt-5 list-none">
+          <li class="my-2"><a href="#">Home</a></li>
+          <li class="my-2"><a href="#">About Ketamine</a></li>
+          <li class="my-2"><a href="#">About Us</a></li>
+          <li class="my-2"><a href="#">Patent Forms</a></li>
+          <li class="my-2"><a href="#">Contact us</a></li>
+        </ul>
       </div>
 
       <div class="col-span-12 md:col-span-4 flex   h-full flex-col gap-2 mb-5">
-       
-                    <h4 class="text-lg text-center ">CONTACTS</h4>
-                     <ul class=" text-center  mt-5 list-none">
-      <li class="my-3"><p><i class="fa fa-phone"></i><a href="">&nbsp;123-456-789</a></p></li>
-      <li class="my-3"><p><i class="fa fa-envelope" ></i>&nbsp;info@ksolp.com</p></li>
-      <li class="my-3"><p><i class="fa fa-map-marker" ></i>&nbsp; 111 Forest Ave Second floor<br>Narberth, PA 19072</p></li>
-    </ul>
+
+        <h4 class="text-lg text-center ">CONTACTS</h4>
+        <ul class=" text-center  mt-5 list-none">
+          <li class="my-3">
+            <p><i class="fa fa-phone"></i><a href="">&nbsp;123-456-789</a></p>
+          </li>
+          <li class="my-3">
+            <p><i class="fa fa-envelope"></i>&nbsp;info@ksolp.com</p>
+          </li>
+          <li class="my-3">
+            <p><i class="fa fa-map-marker"></i>&nbsp; 111 Forest Ave Second floor<br>Narberth, PA 19072</p>
+          </li>
+        </ul>
       </div>
       <div class="col-span-12 md:col-span-4 flex justify-center  flex-col">
-        <div class="social-icons flex  justify-around items-center " >
-                    <a href="#"><i class="fa-brands fa-facebook fa-xl"></i></a>
-                    <a href="#"><i class="fa-brands fa-youtube fa-xl"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram fa-xl"></i></a>
-                </div>
-                <img src="/build/img/logo1.png" alt="" class="my-5">
-                <p class="text-center">2024 copyright &copy;KetamineClinic</p>
-    </div></div>
- <div class="w-full min-h-[15vh]" style="background:url('/build/img/leaf.jpg');"></div>
+        <div class="social-icons flex  justify-around items-center ">
+          <a href="#"><i class="fa-brands fa-facebook fa-xl"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube fa-xl"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram fa-xl"></i></a>
+        </div>
+        <img src="/build/img/logo1.png" alt="" class="my-5">
+        <p class="text-center">2024 copyright &copy;KetamineClinic</p>
+      </div>
+    </div>
+    <div class="w-full min-h-[15vh]" style="background:url('/build/img/leaf.jpg');"></div>
   </footer>
 
   <script src="/build/js/main.js"></script>
